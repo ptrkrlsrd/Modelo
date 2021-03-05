@@ -10,20 +10,20 @@ import (
 	"gopkg.in/src-d/go-git.v4/plumbing/transport/http"
 )
 
-type GithubAuth struct {
+type Auth struct {
 	Username string
 	Token    string
 }
 
 type Service struct {
 	GithubClient *githubv4.Client
-	auth         GithubAuth
+	auth         Auth
 }
 
 func NewService(githubUsername string, githubToken string) Service {
 	return Service{
-		GithubClient: newGithubClient(githubToken),
-		auth: GithubAuth{
+		GithubClient: newClient(githubToken),
+		auth: Auth{
 			Username: githubUsername,
 			Token:    githubToken,
 		},
