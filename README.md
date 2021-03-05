@@ -1,4 +1,5 @@
 # Modelo
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=ptrkrlsrd_modelo)](https://sonarcloud.io/dashboard?id=ptrkrlsrd_modelo)
 ## Project templating made easy. 
 
 ![](recorded.gif)
